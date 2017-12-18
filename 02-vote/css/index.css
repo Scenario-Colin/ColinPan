@@ -1,0 +1,175 @@
+/*全屏页面*/
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+/*背景图*/
+.header .music {
+  position: absolute;
+  width: 10%;
+  top: 10px;
+  right: 10px;
+}
+.header > img {
+  width: 100%;
+  display: block;
+}
+/*音乐图*/
+.header .music img {
+  width: 100%;
+  animation: run 3s linear infinite;
+}
+@keyframes run {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+/*搜索和留言*/
+.text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+.text li {
+  float: left;
+  width: 50%;
+  height: 100%;
+  line-height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.text li:first-child {
+  padding-right: 22px;
+}
+.text li:last-child {
+  padding-left: 22px;
+}
+.text li:first-child a {
+  float: right;
+}
+.text li a {
+  height: 100%;
+  color: #fff;
+}
+.ml_10 {
+  margin-left: 10px;
+}
+
+/*下半部分*/
+.content {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+}
+
+
+
+/*tab栏*/
+.tab {
+  width: 100%;
+  height: 30px;
+}
+.tab a {
+  display: inline-block;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #e6e6e6;
+  float: left;
+  text-align: center;
+}
+.tab-l {
+  border-right: 1px solid #fff;
+}
+.tab-r {
+  border-left: 1px solid #fff;
+}
+.active {
+  border-bottom: 4px solid #d40e05;
+}
+
+/*主体部分*/
+.main {
+
+}
+.main ul {
+  width: 100%;
+  padding: 10px;
+}
+.main ul li {
+  float: left;
+  width: 33.3%;
+  padding: 2px;
+}
+.main ul li div {
+  border: 1px solid #d40e05;
+  padding: 5px;
+}
+.main ul li div h3 {
+  text-align: center;
+  font-size: 13px;
+}
+.main ul li div p {
+  font-size: 12px;
+}
+.main li a {
+  display: inline-block;
+  width: 100%;
+}
+.main li a img {
+  width: 100%;
+}
+.main li div a:last-of-type {
+  background-color: #c52921;
+  text-align: center;
+  border-radius: 5px;
+  height: 25px;
+  line-height: 25px;
+  color: #fff;
+}
+
+/*tab栏目 右侧*/
+.right {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
